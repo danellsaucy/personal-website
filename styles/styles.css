@@ -40,6 +40,10 @@ nav {
   font-size: 14px;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
 
 .burger div {
   width: 25px;
@@ -49,13 +53,13 @@ nav {
   transition: all 0.3s ease;
 }
 
-@@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .nav-links {
     width: : 60%;
   }
 }
 
-@@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
