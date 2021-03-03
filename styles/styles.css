@@ -59,10 +59,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-body {
-    padding-top: 40px;
-}
-
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 60%;
