@@ -73,7 +73,7 @@ nav {
     .nav-links {
         position: fixed;
         right: 0px;
-        height: 92vh;
+        height: 50vh;
         top: 8vh;
         background-color: #292929;
         display: flex;
@@ -86,6 +86,7 @@ nav {
 
     .nav-links li {
         opacity: 0;
+        height: 20px
     }
 
     .burger {
