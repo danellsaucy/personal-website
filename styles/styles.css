@@ -162,9 +162,16 @@ nav {
         font-size: 25px;
         padding-top: 10vh;
     }
-
+    
+    .container span {
+        padding-top: 10vh;
+    }
+    
     p {
-        font-size: 18px;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 20px;
+        padding-top: 2vh;
         padding-right: 5vh;
         padding-left: 5vh;
     }
@@ -185,9 +192,11 @@ nav {
     }
 
     p {
+        text-align: left;
         font-size: 23px;
-        padding-right: 8vh;
-        padding-left: 8vh;
+        padding-top: 2vh;
+        padding-right: 12vh;
+        padding-left: 12vh;
     }
 }
 
@@ -203,13 +212,33 @@ nav {
     .container h4 {
         font-size: 50px;
         padding-top: 10vh;
+        padding-bottom: 3vh;
     }
 
     p {
-        font-size: 27px;
-        padding-right: 10vh;
-        padding-left: 10vh;
+        text-align: left;
+        font-size: 23px;
+        padding-top: 2vh;
+        padding-right: 35vh;
+        padding-left: 35vh;
     }
 }
+
+/* Cursor */
+.text-type > .txt {
+    border-right: 5px solid #ffffff;
+    animation: blinkTextCursor 5000ms steps(500) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+    0% {
+      border-right-color: rgba(255,255,255);
+    }
+    50% {
+      border-right-color: rgb(0, 0, 0);
+    }
+  }
+  
+  
 
 

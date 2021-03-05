@@ -22,4 +22,39 @@ function navSlide() {
     });    
 }
 
+const TypeWriter = function(textElement, words) {
+    this.textElement = textElement;
+    this.words = words;
+    this.txt = '';
+    this.wordIndex = 0;
+    this.type();
+    this.isFinished = false;
+}
+
+// Type Method
+TypeWriter.prototype.type = function () {
+    const current = this.wordIndex % this.words.length;
+    const fullTxt = this.words[current];
+    if(this.isFinished) {
+        // Finished outputting
+    } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+    // Insert txt into element
+    this.textElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+    //
+    setTimeout(() => this.type(), 300)
+}
+
+// Init on DOM Load
+document.addEventListener('DOMContentLoaded', init);
+
+// Init App
+function init() {
+    const txtElement = document.querySelector(".text-type");
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    new TypeWriter(txtElement, words);
+}
+
 navSlide();
