@@ -110,6 +110,10 @@ nav {
     position: fixed;
 }
 
+.dimmer.click {
+    position: fixed;
+}
+
 .container {
     margin: auto;
     padding: 20px;
@@ -160,11 +164,12 @@ nav {
     align-content: center;
 }
 
-,iconparent {
+.iconparent {
     position: relative
 }
 
 .icons {
+    text-decoration: none;
     position: absolute;
     bottom: 0;
 }
@@ -182,7 +187,7 @@ nav {
         font-size: 25px;
         padding-top: 10vh;
     }
-    
+
     .container span {
         padding-top: 10vh;
         text-align: center;
@@ -276,7 +281,3 @@ nav {
       border-right-color: rgb(0, 0, 0);
     }
   }
-  
-  
-
-

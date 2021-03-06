@@ -1,13 +1,13 @@
 function navSlide() {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
-    const dimmer = document.querySelector(".dimmer")
+    const dimmer = document.querySelector(".dimmer");
     const navLinks = document.querySelectorAll(".nav-links li");
 
     burger.addEventListener("click", () => {
         //Toggle Nav
         nav.classList.toggle("nav-active");
-        dimmer.classList.toggle("show")
+        dimmer.classList.toggle("show");
         //document.getElementsByClassName('dimmer')[0].style.backgroundColor = 'white';
         //Animate Links
         navLinks.forEach((link, index) => {
@@ -19,8 +19,20 @@ function navSlide() {
         });
         //Burger Animation
         burger.classList.toggle("toggle");
-    });    
+    });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+   var a = document.getElementById("about");
+   var b = document.getElementById("project");
+   var c = document.getElementById("contact");
+   var d = document.getElementById("home");
+
+   a.onclick = function() {
+     const dimmer = document.querySelector(".dimmer");
+     dimmer.classList.toggle("click");
+   }
+}, false);
 
 const TypeWriter = function(textElement, words) {
     this.textElement = textElement;
