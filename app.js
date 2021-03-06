@@ -41,7 +41,7 @@ TypeWriter.prototype.type = function () {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
     // Insert txt into element
-    this.textElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+    this.textElement.innerHTML = `<h4 class="txt">${this.txt}</h4>`;
 
     //
     setTimeout(() => this.type(), 300)
