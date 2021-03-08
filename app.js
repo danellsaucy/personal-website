@@ -22,18 +22,6 @@ function navSlide() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-   var a = document.getElementById("about");
-   var b = document.getElementById("project");
-   var c = document.getElementById("contact");
-   var d = document.getElementById("home");
-
-   a.onclick = function() {
-     const dimmer = document.querySelector(".dimmer");
-     dimmer.classList.toggle("click");
-   }
-}, false);
-
 const TypeWriter = function(textElement, words) {
     this.textElement = textElement;
     this.words = words;
