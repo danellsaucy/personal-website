@@ -35,16 +35,16 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="index.html">Home</a>
+          <a id=home href="index.html">Home</a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a id=about href="about.html">About</a>
         </li>
         <li>
-          <a href="projects.html">Projects</a>
+          <a id=project href="projects.html">Projects</a>
         </li>
         <li>
-          <a href="#contact.html">Contact</a>
+          <a id=contact href="contact.html">Contact</a>
         </li>
       </ul>
       <div class="burger">
@@ -55,3 +55,43 @@
     </nav>
   </div>
   <div class="dimmer">    </div>
+  <div class="container">
+    <div class="projects" id="projects">
+      <h4 className='center-align'><strong>Projects</strong></h4>
+    </div>
+  </div>
+  <div class="section">
+    <div class="column-projects">
+      <h5>Teamfight Tactics bot (Python)</h5>
+      <p>I created a bot in Python that uses computer vision to analyze the possible moves at a current state. It obtains the current state by periodically taking screenshots of the computer screen, it then uses computer vision to determine where certain characters are and make choices.</p>
+       <h5><u><a href="https://github.com/danellsaucy/LeagueBot1440p">Code</a></u></h5>
+   </div>
+    <div class="column-projects">
+      <h5>Analysis of Mobile Applications (R)</h5>
+      <p>I used a dataset that was provided online about the various application and worked with a team to aggregated the data to find useful insights about different categories. I made visualizations using Shiny app to see the spending habits of people in different age groups, I then also calculated the most oversaturated applcation category for both Apple and Google Playstore. Lastly I compared the average rating of the various categories comparing it to the average price of applications in the same category.</p>
+      <div class="section">
+        <div class="links">
+          <h5><u><a href="https://github.com/edwardsung63/finaldeliverable">Code</a></u></h5>
+        </div>
+        <div class="links">
+          <h5><u><a href="https://edwardsung.shinyapps.io/finaldeliverable/">Link</a></u></h5>
+        </div>
+      </div>
+    </div>
+    <div class="column-projects">
+      <h5>Personal Website Portfolio (HTML, CSS, JavaScript)</h5>
+      <p>This whole website was created through knowledge of HTML, CSS and JavaScript, that I purely learned online through various Google searches and YouTube videos. I was able to create a site that is reactive and responsive with some simple JavaScript included for effects.</p>
+      <div class="section">
+        <div class="links">
+          <h5><u><a href="https://github.com/danellsaucy/personal-website">Code</a></u></h5>
+        </div>
+        <div class="links">
+          <h5><u><a href="https://danellsaucy.github.io/personal-website/">Link</a></u></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
